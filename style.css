@@ -1,16 +1,65 @@
-body {
-    background-color: bisque;
+.body-color {
+    background-color: lightgray;
+}
+
+.rounded-image {
+    border-radius: 20px;
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+
+
+.myBio-h3 {
+    margin-left: 35px;
+    margin-bottom: 40px;
+}
+
+.myProjects-h2 {
+    margin-left: 35px;
+    margin-bottom: 40px;
+    color: blue;
 }
 
 p {
-    style="line-height: 1.5;"
+    padding: 0px;
 }
 
 .div-rounded-edges {
-    margin: 20px; 
+    display: grid;
+    grid-template-rows: 1;
+    margin: 70px; 
     padding: 20px;
     border: 1px solid #000; 
     border-radius: 10px; 
-    max-width: 300px;
     background-color: #f0f0f0;
 }
+
+
+.link {
+    position: relative;
+    color: #007BFF; 
+    text-decoration: none; 
+    transition: color 1s;
+}
+
+.link:hover {
+    color: brown;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 50%;
+    background-color: green;
+    z-index: -1;
+}
+
+.link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
