@@ -5,3 +5,11 @@ body {
 p {
     style="line-height: 1.5;"
 }
+
+.div-rounded-edges {
+    margin: 20px; /* Margin applied to all sides */
+    padding: 20px;
+    border: 1px solid #000; /* Add a border to make the rounded edges visible */
+    border-radius: 10px; /* Adjusts the roundness of the corners */
+    max-width: 300px; /* Optional: sets a maximum width for the div */
+}
